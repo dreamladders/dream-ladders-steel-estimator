@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Ladders AI Steel Estimator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Dream Ladders AI</h1>
+            <p>Steel Reinforcement Estimator</p>
+        </div>
+
+        <div class="card">
+            <h2>Slab Inputs</h2>
+
+            <label>Slab Length (m)</label>
+            <input type="number" id="length" placeholder="Enter slab length">
+
+            <label>Slab Width (m)</label>
+            <input type="number" id="width" placeholder="Enter slab width">
+
+            <label>Cover (mm)</label>
+            <input type="number" id="cover" value="25">
+
+            <label>Main Bar Diameter (mm)</label>
+            <input type="number" id="mainDia" value="12">
+
+            <label>Main Bar Spacing (mm)</label>
+            <input type="number" id="mainSpacing" value="150">
+
+            <label>Distribution Bar Diameter (mm)</label>
+            <input type="number" id="distDia" value="10">
+
+            <label>Distribution Bar Spacing (mm)</label>
+            <input type="number" id="distSpacing" value="200">
+
+            <label>Steel Rate (₹ per kg)</label>
+            <input type="number" id="steelRate" value="70">
+
+            <button onclick="calculateSteel()">Calculate Estimation</button>
+        </div>
+
+        <div class="result-card" id="result">
+            <h2>Estimation Result</h2>
+            <div id="output"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
